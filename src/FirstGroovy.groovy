@@ -23,6 +23,13 @@ class FirstGroovy {
         println("version4 UUID: " + uuidVersion4)
         println("version3 UUID: " + uuidVersion3)
 
+        def myFileDirectory = "C:\\temp\\"
+        def myFileName = "myFileJohn.txt"
+        def myFile = new File(myFileDirectory + myFileName)
+        if (myFile.exists())
+            println("It exists: " + myFile)
+        else
+            println("it doesn't exist.")
 //        def sayHello(abName) {
 //            println("Hello $abName!")
 //        }
